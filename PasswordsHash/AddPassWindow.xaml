@@ -1,0 +1,39 @@
+﻿<Window x:Class="PasswordsHash.AddPassWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordsHash"
+        mc:Ignorable="d"
+        Title="AddPassWindow" Height="300" Width="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="26">Name</TextBlock>
+
+        <TextBox x:Name="NameForPassword" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" FontSize="26"></TextBox>
+        
+        <TextBlock Grid.Row="2" Grid.Column="0"   HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="26">Login</TextBlock>
+
+        <TextBox x:Name="Login" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" FontSize="26"></TextBox>
+
+        <TextBlock Grid.Row="4" Grid.Column="0"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="26">Password</TextBlock>
+
+        <TextBox x:Name="Password" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" FontSize="26"></TextBox>
+
+        <Button  Grid.Row="6" Grid.Column="2" Margin="5" x:Name="AddPassFromWindow" Click="AddPassFromWindow_Click"  FontSize="20">Add</Button>    
+        
+    </Grid>
+</Window>
